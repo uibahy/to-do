@@ -7,7 +7,7 @@
 }
 
 body {
-  background: rgb(242, 242, 242);
+  background: rgb(0, 0, 0);
 }
 .todo-app {
   display: flex;
