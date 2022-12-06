@@ -52,7 +52,15 @@ h1 {
   border: 2px solid rgb(207, 213, 220);
   outline: none;
   width: 320px;
+  transition: 0.3s;
 }
+
+.todo-input:hover{
+  background: rgb(238, 238, 238);
+  border: 1px solid rgb(158, 158, 158);
+  border-radius: 4px 0 0 4px;
+}
+
 
 .todo-button {
   padding: 16px;
