@@ -72,6 +72,7 @@ h1 {
 }
 
 .todo-row {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,6 +82,14 @@ h1 {
   padding: 16px;
   border-radius: 5px;
   width: 90%;
+  transition: 0.3s;
+  border: 1px solid rgb(231, 230, 230);
+}
+
+.todo-row:hover{
+  background: rgb(225, 225, 225);
+  border: 1px solid rgb(158, 158, 158);
+  border-radius: 4px;
 }
 
 .iconsContainer {
