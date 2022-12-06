@@ -19,7 +19,8 @@ body {
   text-align: center;
   margin: 128px auto;
   border-radius: 4px;
-  padding-bottom: 32px;
+  padding: 32px;
+  align-items: center
 }
 
 .important-btn {
@@ -43,16 +44,26 @@ h1 {
 }
 
 .todo-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
   margin-bottom: 32px;
+  justify-content: center;
 }
 
+
 .todo-input {
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
   border: 2px solid rgb(207, 213, 220);
   outline: none;
-  width: 320px;
   transition: 0.3s;
+  width: 70%;
 }
 
 .todo-input:hover{
@@ -71,6 +82,7 @@ h1 {
   background: rgb(0, 0, 0);
   color: rgb(248, 248, 248);
   text-transform: capitalize;
+  width: 30%;
 }
 
 .todo-container {
@@ -114,4 +126,47 @@ h1 {
   align-self: center;
   color: red;
   background-color: rgb(233, 233, 233);
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .todo-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    justify-content: center;
+    width: fit-content;
+    width: 90%;
+  }
+
+  .todo-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: rgb(0, 0, 0);
+    color: rgb(248, 248, 248);
+    text-transform: capitalize;
+    width: 100%;
+  }
+
+  .todo-input {
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid rgb(207, 213, 220);
+    outline: none;
+    transition: 0.3s;
+    width: 100%;
+  }
+
 }
